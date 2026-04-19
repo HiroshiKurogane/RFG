@@ -9,7 +9,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
@@ -23,7 +23,7 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#">About Us</a>
+          <a class="nav-link" href="#about-us">About Us</a>
           <a class="nav-link" href="#">Food List</a>
           <a class="nav-link" href="#">Generator</a>
         </div>
@@ -47,14 +47,14 @@
           <div class="step-card">
             <div class="step-number">1</div>
             <h3>Go to the generator page</h3>
-            <p>Click on the generator button in the navigation bar.</p>
+            <p>Locate to the generation page by using the navigation bar.</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="step-card">
             <div class="step-number">2</div>
             <h3>Generate</h3>
-            <p>Click the generator button to get a random food suggestion tailored to your preferences.</p>
+            <p>Click the generator button to get a random food suggestion.</p>
           </div>
         </div>
         <div class="col-md-4">
@@ -68,24 +68,38 @@
     </div>
   </section>
 
-  <section class="sections">
+  <section class="sections" id="about-us">
     <div class="container">
-      <h2>About us</h2>
+      <h2>About Us</h2>
       <div class="row g-4">
         <div class="col-md-4">
           <div class="step-card">
-            <img src="https://tse4.mm.bing.net/th/id/OIP.ayACpdslq2Oq9hSUQnfMWQHaF1?rs=1&pid=ImgDetMain&o=7&rm=3"
+            <img
+              src="https://cdn.discordapp.com/avatars/606392941732298764/22f23955caaf39598c27bd8eedcf3eeb.png?size=4096"
               class="img-thumbnail" alt="..."><br><br>
-            <h3>Go to the generator page</h3>
-            <p>Click on the generator button in the navigation bar.</p>
+            <h3>Hiroshi Kurogane</h3>
+            <p>„Nem tudhatom, hogy a holnap merre jár.
+              Nem ismerhetem az évek jelszavát.
+              Nem tudhatom, hogy az óránk
+              még hány kört jár,
+              de itt van egy perc, kérlek, vedd el..”
+
+              - Siklósi Örs🖤🕊</p>
           </div>
         </div>
-        <div class="col-md-4 d-flex justify-content-md-end">
+        <div class="col-md-4 owners"></div>
+        <div class="col-md-4">
           <div class="step-card">
-            <img src="https://tse4.mm.bing.net/th/id/OIP.ayACpdslq2Oq9hSUQnfMWQHaF1?rs=1&pid=ImgDetMain&o=7&rm=3"
+            <img
+              src="https://cdn.discordapp.com/avatars/481509543621165067/ce9ef2a27cf8ddcf249c054484ce993f.png?size=4096"
               class="img-thumbnail" alt="..."><br><br>
-            <h3>Generate</h3>
-            <p>Click the generator button to get a random food suggestion tailored to your preferences.</p>
+            <h3>Bluebirdgamer19</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+              of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+              like Aldus PageMaker including versions of Lorem Ipsum.</p>
           </div>
         </div>
       </div>
