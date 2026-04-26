@@ -35,11 +35,11 @@
     <div class="container">
       <h1>Welcome to Random Food Generator</h1>
       <p>Discover new recipes and food ideas instantly</p>
-      <button class="cta-button">Get Started</button>
+      <a class="cta-button" href="#how-it-works">Get Started</a>
     </div>
   </div>
 
-  <section class="sections">
+  <section class="sections" id="how-it-works">
     <div class="container">
       <h2>How It Works</h2>
       <div class="row g-4">
