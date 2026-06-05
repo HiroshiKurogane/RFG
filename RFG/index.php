@@ -9,7 +9,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
@@ -72,20 +72,25 @@
     <div class="container">
       <h2>About Us</h2>
       <div class="row g-4">
-        <p class="text-center text-black">This website is created as a school project. Our teacher gave us a task where we had to make teams and work together. Since we are best friends we thought it will be easy to work together. Our teacher also gave us ideas what kind of websites we could create. We chose to create a random food generator to help people discover new recipes and food ideas instantly. <br><br> DISCLAIMER: We only used AI for the design, everything else was written by us.</p>
+        <p class="text-center text-black">This website is created as a school project. Our teacher gave us a task where
+          we had to make teams and work together. Since we are best friends we thought it will be easy to work together.
+          Our teacher also gave us ideas what kind of websites we could create. We chose to create a random food
+          generator to help people discover new recipes and food ideas instantly. <br><br> DISCLAIMER: We only used AI
+          for the design, everything else was written by us.</p>
         <div class="col-md-4">
           <div class="step-card">
             <img
               src="https://cdn.discordapp.com/avatars/606392941732298764/22f23955caaf39598c27bd8eedcf3eeb.png?size=4096"
               class="img-thumbnail" alt="..."><br><br>
             <h3>Hiroshi Kurogane</h3>
-            <p>„Nem tudhatom, hogy a holnap merre jár.
-              Nem ismerhetem az évek jelszavát.
-              Nem tudhatom, hogy az óránk
-              még hány kört jár,
-              de itt van egy perc, kérlek, vedd el..”
-
-              - Siklósi Örs🖤🕊</p>
+            <p>„Nem tudhatom, hogy a holnap merre jár.<br>
+              Nem ismerhetem az évek jelszavát.<br>
+              Nem tudhatom, hogy az óránk<br>
+              még hány kört jár,<br>
+              de itt van egy perc, kérlek, vedd el,<br>
+              hogy sose legyek egyedül már!”<br>
+              <br>
+              - Siklósi Örs 🖤👣</p>
           </div>
         </div>
         <div class="col-md-4 owners"></div>
@@ -95,16 +100,21 @@
               src="https://cdn.discordapp.com/avatars/481509543621165067/ce9ef2a27cf8ddcf249c054484ce993f.png?size=4096"
               class="img-thumbnail" alt="..."><br><br>
             <h3>Bluebirdgamer19</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
-              of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
-              like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Hell nah bro mégis miért kell szöveget írni. Viszont Cserébe kapsz egy baszó dalszöveget:<br><br>
+              Lelket vennék, de nincs már eladó,<br>
+              használható, hozzám való.<br>
+              Lelket vennék, mert minden más csak kellék, eldobható,<br>
+              és nélküle többé nem lehetek jó.<br><br>- Bluebirdgamer 🖤</p>
           </div>
         </div>
       </div>
   </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p align="center"><a style="text-decoration: none;" href="https://siklosiors.hu">.</a></p>
+    </div>
+  </footer>
 
 </body>
 
