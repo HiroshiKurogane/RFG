@@ -24,8 +24,7 @@
         <div class="navbar-nav">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
           <a class="nav-link" href="#about-us">About Us</a>
-          <a class="nav-link" href="#">Food Galery</a>
-          <a class="nav-link" href="#">Generator</a>
+          <a class="nav-link" href="./generator.php">Generator</a>
         </div>
       </div>
     </div>
@@ -100,7 +99,7 @@
               src="https://cdn.discordapp.com/avatars/481509543621165067/ce9ef2a27cf8ddcf249c054484ce993f.png?size=4096"
               class="img-thumbnail" alt="..."><br><br>
             <h3>Bluebirdgamer19</h3>
-            <p>Hell nah bro mégis miért kell szöveget írni. Viszont Cserébe kapsz egy baszó dalszöveget:<br><br>
+            <p>Hell nah bro mégis miért kell szöveget írni. Viszont cserébe kapsz egy baszó dalszöveget:<br><br>
               Lelket vennék, de nincs már eladó,<br>
               használható, hozzám való.<br>
               Lelket vennék, mert minden más csak kellék, eldobható,<br>
