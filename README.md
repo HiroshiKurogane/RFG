@@ -1,13 +1,26 @@
-# RFG: An userfriendly food generator.
-This website is created as a school project. Our teacher gave us a task where we had to make teams and work together. Since we are best friends we thought it will be easy to work together. Our teacher also gave us ideas what kind of websites we could create. We chose to create a random food generator to help people discover new recipes and food ideas instantly. <br><br> DISCLAIMER: We only used AI for the design, everything else was written by us.
+# RFG: Egy felhasználóbarát ételgenerátor.
+Ez a weboldal egy iskolai projekt keretében készült. Tanárunk azt a feladatot adta nekünk, hogy csapatokat alkossunk és együtt dolgozzunk. Mivel legjobb barátok vagyunk, úgy gondoltuk, könnyű lesz együtt dolgozni. Tanárunk ötleteket is adott arra, hogy milyen weboldalakat készíthetnénk. Úgy döntöttünk, hogy egy véletlenszerű ételgenerátort készítünk, amely segít az embereknek azonnal új recepteket és ételötleteket felfedezni. <br><br> Disclaimer: Csak a tervezéshez használtunk mesterséges intelligenciát.
 
-## Features:
-- Random Food Generation
-- Food Galery
-- Links for every recipe
-- Users can add new dishes
+Jelenleg (2026. 05. 21.) csak 67 recept.
 
-## Requirements:
-- An internet browser (example: Chrome, FireFox, Edge, Opera)
-- Internet connection
-- A working device
+## Funkcionalítás:
+- Véletlenszerű ételgenerálás
+- Recept linkelés
+- Az étel részletes leírása
+- Lehetőség új ételek hozzáadására
+
+## Követelmények:
+- Internetböngésző (például: Chrome, Firefox, Edge, Opera, Safari, Brave, Vivaldi, Arc, Tor browser, Samsung Internet [Az utolsó nyolc böngészőn nem lett tesztelve, emiatt nem vállalunk felelősséget]) 
+- Internetkapcsolat
+- Működőképes eszköz
+- Webalkalmazások használatához szükséges intelligencia
+- Áram ellátás
+- Ételek elkészitésére alkalmas helyiség
+- A billentyűzet ismerete (opcionális)
+- Egy egér, nem az állat
+- Gravitáció (ajánlott)
+- Legalább egy működő ujj az egér/trackpad kezeléséhez
+- Kávé vagy RedBull (erősen ajánlott hosszabb munkameneteknél)
+- Türelem a betöltési képernyőkhöz
+- Szemüveg (ha szükséges, de nem kötelező)
+- Alapvető olvasási képesség
