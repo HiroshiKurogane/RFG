@@ -25,6 +25,7 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
           <a class="nav-link" href="#about-us">About Us</a>
           <a class="nav-link" href="./generator.php">Generator</a>
+          <a class="nav-link" href="./upload.php">Upload Food</a>
         </div>
       </div>
     </div>

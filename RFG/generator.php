@@ -14,7 +14,6 @@
 </head>
 
 <body>
-  <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.php">Random Food Generator</a>
@@ -26,48 +25,42 @@
         <div class="navbar-nav">
           <a class="nav-link" href="index.php">Home</a>
           <a class="nav-link active" aria-current="page" href="generator.php">Generator</a>
+          <a class="nav-link" href="upload.php">Upload Food</a>
         </div>
       </div>
     </div>
   </nav>
 
-  <!-- Main Content -->
   <div class="container my-5">
     <div class="row justify-content-center">
       <div class="col-lg-8">
-        <!-- Header -->
         <div class="text-center mb-5">
           <h1 class="display-4 fw-bold mb-3">Food Generator</h1>
-          <p class="lead text-muted">Can't decide what to eat? Click the button below to discover a random food!</p>
+          <p class="lead text-muted">Nem tudod eldönteni mit szeretnél enni? Ezzel az egyszerű generátorral könnyedén eldöntheted!</p>
         </div>
 
-        <!-- Generator Card -->
         <div class="card bg-dark border-primary shadow-lg mb-5">
           <div class="card-body p-5 text-center">
-            <!-- Display Area -->
             <div id="foodDisplay" class="mb-4">
               <div class="placeholder-section">
                 <i class="fas fa-utensils display-1 text-primary mb-3" style="font-size: 4rem;">🍽️</i>
-                <p class="text-muted">Click "Generate" to get started!</p>
+                <p class="text-muted">Nyomd meg a "Generate" gombot a kezdéshez!</p>
               </div>
             </div>
 
 
 
-            <!-- Loading Spinner -->
             <div id="loadingSpinner" style="display: none;" class="mb-4">
               <div class="spinner-border text-primary" role="status">
                 <span class="visually-hidden">Loading...</span>
               </div>
-              <p class="text-muted mt-2">Generating a delicious surprise...</p>
+              <p class="text-muted mt-2">Egy finomság generálása folyamatban</p>
             </div>
 
-            <!-- Error Message -->
             <div id="errorMessage" style="display: none;" class="alert alert-danger mb-4" role="alert">
               <p id="errorText" class="mb-0"></p>
             </div>
 
-            <!-- Buttons -->
             <div class="d-grid gap-2 d-md-flex justify-content-md-center">
               <button id="generateBtn" class="btn btn-primary btn-lg px-5" onclick="generateFood()">
                 🎲 Generate Food
@@ -84,12 +77,10 @@
   <script>
     let allFoods = [];
 
-    // Fetch all foods on page load
     window.addEventListener('DOMContentLoaded', function() {
       fetchAllFoods();
     });
 
-    // Fetch all foods from server
     async function fetchAllFoods() {
       try {
         const response = await fetch('./server.php');
@@ -102,35 +93,29 @@
       }
     }
 
-    // Generate random food
     function generateFood() {
       if (allFoods.length === 0) {
         showError('No foods available. Please refresh the page.');
         return;
       }
 
-      // Show loading state
       document.getElementById('loadingSpinner').style.display = 'block';
       document.getElementById('generateBtn').disabled = true;
       document.getElementById('anotherBtn').disabled = true;
       document.getElementById('errorMessage').style.display = 'none';
 
-      // Simulate API delay for effect
       setTimeout(() => {
         const randomIndex = Math.floor(Math.random() * allFoods.length);
         const food = allFoods[randomIndex];
 
-        // Display the food
         displayFood(food);
 
-        // Hide loading state
         document.getElementById('loadingSpinner').style.display = 'none';
         document.getElementById('generateBtn').disabled = false;
         document.getElementById('anotherBtn').disabled = false;
       }, 800);
     }
 
-    // Display food details
     function displayFood(food) {
       const recipeLink = food.Recipe_URL ? `<a href="${food.Recipe_URL}" target="_blank" class="btn btn-info btn-sm mt-3">🔗 View Recipe</a>` : '';
       
@@ -144,29 +129,27 @@
         </div>
       `;
 
-      // Show/hide buttons
       document.getElementById('generateBtn').style.display = 'none';
       document.getElementById('anotherBtn').style.display = 'inline-block';
       document.getElementById('resetBtn').style.display = 'inline-block';
     }
 
-    // Reset generator
     function resetGenerator() {
-      document.getElementById('foodDetails').style.display = 'none';
       document.getElementById('foodDisplay').innerHTML = `
         <div class="placeholder-section">
           <i class="fas fa-utensils display-1 text-primary mb-3" style="font-size: 4rem;">🍽️</i>
-          <p class="text-muted">Click "Generate" to get started!</p>
+          <p class="text-muted">Nyomd meg a "Generate" gombot a kezdéshez!</p>
         </div>
       `;
 
       document.getElementById('generateBtn').style.display = 'inline-block';
+      document.getElementById('generateBtn').disabled = false;
       document.getElementById('anotherBtn').style.display = 'none';
+      document.getElementById('anotherBtn').disabled = false;
       document.getElementById('resetBtn').style.display = 'none';
       document.getElementById('errorMessage').style.display = 'none';
     }
 
-    // Show error message
     function showError(message) {
       document.getElementById('errorText').textContent = message;
       document.getElementById('errorMessage').style.display = 'block';
